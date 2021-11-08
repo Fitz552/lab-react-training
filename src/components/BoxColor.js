@@ -11,7 +11,7 @@ function BoxColor(props) {
     //const hexString = `#${toHex({props.r})}${toHex({props.g})}${toHex({props.b})}`
 
     return (
-        <div class= "m-2 text-center border border-dark" style = {boxStyle}>
+        <div className= "m-2 text-center border border-dark" style = {boxStyle}>
             <p>rgb({props.r},{props.g},{props.b})</p>
             <p>#{toHex(props.r)}{toHex(props.g)}{toHex(props.b)}</p>
         </div>

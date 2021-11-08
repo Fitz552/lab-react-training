@@ -8,21 +8,21 @@ function DriverCard(props) {
     }
 
     return( 
-        <div class="row rounded bg-primary m-2 p-2 justify-content-md-center" align="center">
-            <div class="col" align="end">
-                <img style = {{width: "150px", height: "150px"}} class="rounded-circle" src = {props.img} alt = "Driver profile"/>
+        <div className="row rounded bg-primary m-2 p-2 justify-content-md-center" align="center">
+            <div className="col" align="end">
+                <img style = {{width: "150px", height: "150px"}} className="rounded-circle" src = {props.img} alt = "Driver profile"/>
             </div>
-            <div id="lastTry" class="col" align="start" >    
-                <p class="text-white m-0">{props.name}</p>
-                <p class="text-white m-0">
-                    {ratings.map((rating) => {
+            <div id="lastTry" className="col" align="start" >    
+                <p className="text-white m-0">{props.name}</p>
+                <p className="text-white m-0">
+                    {ratings.map((rating, index) => {
                         if (rating === 0) {
-                            return <i class="far fa-star"></i>
+                            return <i className="far fa-star" key={index}></i>
                         }
-                        else return <i class="fas fa-star"></i>
+                        else return <i className="fas fa-star" key={index}></i>
                     })}
                 </p>
-                <p class="text-white m-0">{props.car.model} - {props.car.licensePlate}</p>
+                <p className="text-white m-0">{props.car.model} - {props.car.licensePlate}</p>
                 
             </div>
         </div>

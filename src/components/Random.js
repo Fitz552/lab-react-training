@@ -4,7 +4,7 @@ function calculateRandom (min, max) {
 
 function Random(props) {
     return (
-        <div class="m-2 border border-dark">
+        <div className="m-2 border border-dark">
             <p>
                 Random value between {props.min} and {props.max} = {calculateRandom(props.min,props.max)}
             </p>

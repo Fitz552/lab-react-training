@@ -31,3 +31,9 @@ code {
   flex-direction: column;
   justify-content: center;
 }
+
+.textBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

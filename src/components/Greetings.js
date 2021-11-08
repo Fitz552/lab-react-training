@@ -5,7 +5,7 @@ function chooseLanguage(lang) {
         case("es"): 
             return"Hola "
         case("fr"):
-            return"Hola "
+            return"Bonjour "
         case("de"):
             return"Hallo "
         default:
@@ -17,8 +17,8 @@ function chooseLanguage(lang) {
 function Greetings(props) {
 
     return (
-        <div class = "m-2 border border-dark">
-            <p class="h5">
+        <div className = "m-2 border border-dark">
+            <p className="h5">
                 {chooseLanguage(props.lang)} {props.children}       
             </p>
         </div>

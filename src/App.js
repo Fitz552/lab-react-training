@@ -6,6 +6,14 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButtons';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel'
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/Facebook';
+import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
@@ -44,7 +52,7 @@ function App() {
       <BoxColor r={128} g={255} b={0} />
 
       <h1> CreditCard </h1>
-      <div class = "row m-2 justify-content-md-center">
+      <div className = "row m-2 justify-content-md-center">
         <CreditCard
           type="Visa"
           number="0123456789018845"
@@ -99,6 +107,46 @@ function App() {
           model: "Audi A3",
           licensePlate: "BE33ER"
         }} />
+
+      <h1> LikeButton </h1>
+      <LikeButton/>
+      <LikeButton/>
+
+
+      <h1> ClickablePicture </h1>
+      <ClickablePicture
+        img='../img/persons/maxence.png'
+        imgClicked='../img/persons/maxence-glasses.png'
+      />
+
+
+      <h1> Dice </h1>
+      <Dice/>
+
+      <h1> Carousel </h1>
+
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
+
+      <h1> NumbersTable </h1>
+      <NumbersTable limit={26} />
+
+      <h1> FaceBook </h1>
+      <FaceBook />
+
+
+      <h1> SignupPage </h1>
+
+
+      <h1>RGBColorPicker</h1>
+
+
     </div>
   );
 }

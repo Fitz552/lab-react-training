@@ -9,11 +9,11 @@ function Rating(props) {
 
     return (
         <div>
-            {ratings.map((rating) => {
+            {ratings.map((rating, index) => {
                 if (rating === 0) {
-                    return <i class="far fa-star"></i>
+                    return <i className="far fa-star" key={index}></i>
                 }
-                else return <i class="fas fa-star"></i>
+                else return <i className="fas fa-star" key={index}></i>
             })}
             
         </div>
