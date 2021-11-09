@@ -7,7 +7,6 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButtons';
-import ChangedLikeButton from './components/ChangedLikeButtons';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel'
@@ -112,9 +111,6 @@ function App() {
       <h1> LikeButton </h1>
       <LikeButton/>
       <LikeButton/>
-      <ChangedLikeButton/>
-      <ChangedLikeButton/>
-
 
       <h1> ClickablePicture </h1>
       <ClickablePicture
@@ -145,9 +141,11 @@ function App() {
 
 
       <h1> SignupPage </h1>
+      <SignupPage/>
 
 
       <h1>RGBColorPicker</h1>
+      <RGBColorPicker/>
 
 
     </div>
